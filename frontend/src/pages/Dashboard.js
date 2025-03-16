@@ -32,7 +32,7 @@ const Dashboard = () => {
     total: 0 
   });
 
-  const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
+  const API_URL = process.env.REACT_APP_API_URL;
 
   // Fetch overall statistics
   const fetchOverallStats = useCallback(async () => {

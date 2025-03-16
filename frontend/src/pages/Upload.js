@@ -26,7 +26,7 @@ function Upload() {
     totalItems: 0
   });
 
-  const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
+  const API_URL = process.env.REACT_APP_API_URL;
 
   // Fetch requirements with useCallback to avoid unnecessary re-renders
   const fetchRequirements = useCallback(async (page = 1) => {
